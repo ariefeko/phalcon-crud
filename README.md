@@ -1,5 +1,5 @@
 # Boilerplate
-
+## Step to install
 - Clone repo
 - Run composer update
 - Set your vhost to point to project_root/public

@@ -12,5 +12,5 @@ use Phalcon\Mvc\Router;
 $router = new Router( false );
 
 $router->mount( new \Application\Router\MainRouter() );
-
+// dd($router);
 return $router;

@@ -34,7 +34,7 @@
     "ramsey/uuid": "3.*",
     "alphayax/get_opt": "3.0.0",
     "verdant/xml2array": "dev-master",
-    "sentry/sentry": "dev-master",
+    "sentry/sentry": "^1.0",
     "voku/anti-xss": "dev-master",
     "ezyang/htmlpurifier": "dev-master",
     "peppeocchi/php-cron-scheduler": "^2.3",
@@ -55,7 +55,8 @@
     "squizlabs/php_codesniffer": "~2.6",
     "phalcon/devtools": "~3.0.0",
     "filp/whoops": "^2.1",
-    "whoops/phalcon": "^2.0"
+    "whoops/phalcon": "^2.0",
+    "symfony/var-dumper": "2.7.*"
   },
   "autoload": {
     "psr-4": {
@@ -68,7 +69,8 @@
       "Application\\Router\\": "app/router"
     },
     "files": [
-      "bootstrap/helpers.php"
+      "bootstrap/helpers.php",
+      "helpers.php"
     ]
   },
   "autoload-dev": {
