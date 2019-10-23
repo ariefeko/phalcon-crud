@@ -2,7 +2,6 @@
 
 namespace Application\Controllers;
 
-// use Application\Core\User;
 use Phalcon\Mvc\View;
 use Application\Models\Customer;
 
@@ -28,11 +27,7 @@ class IndexController extends ControllerBase
 
     public function showAction($custId)
     {
-        $conditions = ['custId'=>$custId];
-        $customer = Customer::findFirst([
-            'conditions' => 'id=:custId:',
-            'bind' => $conditions,
-        ]);
+        $customer = $this->findCustomer($custId);
 
         $this->view->title = "Phalcon - Customer Detail";
         $this->view->customer = $customer;
@@ -60,7 +55,7 @@ class IndexController extends ControllerBase
                 return $this->response->redirect('customer');
             }
         } else {
-            $this->flash->error('User form is not valid.');
+            $this->flash->error('Customer form is not valid.');
         }
     }
 
