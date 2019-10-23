@@ -70,7 +70,7 @@
     },
     "files": [
       "bootstrap/helpers.php",
-      "helpers.php"
+      "app/helpers.php"
     ]
   },
   "autoload-dev": {
