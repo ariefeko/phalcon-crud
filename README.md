@@ -10,4 +10,4 @@
 - Create database and set .env configurations
 - Move into project root folder
 - run php app/migrations/migrate.php to migrate and seed into database
-- (optional) this project also included with custom "dd" and "dump" to debuging
+- (optional) this project also included with custom "dd" helper method as debuging tools
